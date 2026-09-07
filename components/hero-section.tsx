@@ -5,6 +5,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { ArrowDown, MessageCircle, ShieldCheck, MapPin, Sparkles, Code, Compass, Hammer } from "lucide-react";
 import { PERSONAL_INFO } from "@/data/portfolio-data";
+import { CvModal } from "./cv-modal";
 
 export function HeroSection() {
   return (
@@ -89,7 +90,7 @@ export function HeroSection() {
             </div>
 
             {/* CTAs */}
-            <div className="flex flex-wrap items-center gap-4 pt-4">
+            <div className="flex flex-wrap items-center gap-3 pt-4">
               <a
                 href="#proyectos"
                 className="px-6 py-3 rounded-full bg-foreground text-background font-semibold text-sm hover:bg-architectural-wood hover:text-black transition-all shadow-md hover:shadow-lg inline-flex items-center gap-2 group"
@@ -106,6 +107,7 @@ export function HeroSection() {
                 <MessageCircle className="w-4 h-4 text-emerald-500" />
                 <span>Contactar por WhatsApp</span>
               </a>
+              <CvModal />
             </div>
           </motion.div>
 
